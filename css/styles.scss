@@ -2,5 +2,9 @@
   margin: 0;
 }
 
-@import "_mediaqueries.scss"
-@import "_grid.scss"
+@import "_mediaqueries.scss";
+@import "_grid.scss";
+
+body{
+  background-color: red;
+}
