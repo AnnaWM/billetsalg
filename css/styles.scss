@@ -2,9 +2,123 @@
   margin: 0;
 }
 
+//links til andre stylesheets!
 @import "_mediaqueries.scss";
 @import "_grid.scss";
 
-body{
-  background-color: red;
+//farver her!
+$blue: #185970;
+$green: #87aa44;
+$grey: #e6e6e6;
+$orange: #f79237;
+
+//Tekst ændringer her!
+
+body {
+  font-family: "Calibri", sans-serif;
+}
+
+h2 {
+  margin: 10px;
+}
+
+h3 {
+  background-color: $orange;
+  padding: 10px;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.mere {
+  text-decoration: underline;
+
+}
+
+//header & footer!
+header {
+  background-color: $grey;
+  border-bottom: solid;
+  border-width: 5px;
+  border-color: $blue;
+    div {
+      #logo {
+        width: 30%;
+        min-width: 100px;
+        max-width: 180px;
+        margin: 10px;
+      }
+    }
+}
+
+footer {
+  background-color: $grey;
+  border-top: solid;
+  border-width: 5px;
+  border-color: $blue;
+  display: flex;
+  justify-content: space-between;
+    .site_map{
+      margin: 10px;
+    }
+    .social {
+      margin: 5px;
+      display: flex;
+      justify-content: flex-end;
+      img {
+        max-width: 50px;
+        max-height: 50px;
+        margin: 5px;
+      }
+    }
+}
+
+//styling af musik-side her!
+#genre {
+  margin: 0 10px;
+}
+
+.liste {
+  margin: 10px;
+}
+
+.event {
+  background-color: $grey;
+    div {
+      .thumb {
+        img {
+          width: 100%;
+        }
+      }
+      p {
+        margin: 10px;
+      }
+      .mere {
+        margin: 10px;
+      }
+      .tekst {
+        display: flex;
+        justify-content: space-between;
+        margin: 5px;
+        .sted {
+          background-color: $blue;
+          color: #ffffff;
+          padding: 10px;
+          margin: 5px;
+          width: 50%;
+        }
+        .buy {
+          display: flex;
+          align-items: center;
+          background-color: $green;
+          color: #ffffff;
+          padding: 10px;
+          margin: 5px;
+          width: 50%;
+        }
+      }
+}
+
 }
