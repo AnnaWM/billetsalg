@@ -5,7 +5,9 @@ body {
   font-family: "Calibri", sans-serif; }
 
 h2 {
-  margin: 10px; }
+  margin: 10px;
+  padding: 5px 10px;
+  background-color: #f79237; }
 
 h3 {
   background-color: #f79237;
@@ -115,31 +117,39 @@ footer {
       max-height: 50px;
       margin: 5px; }
 
-#genre {
-  margin: 0 10px; }
+.valg {
+  max-width: 30%;
+  min-width: 25%;
+  padding: 5px;
+  background-color: #87aa44;
+  color: #FFFFFF; }
+
+.valg3 {
+  display: flex;
+  justify-content: space-around; }
 
 .liste {
   margin: 10px; }
 
 .event {
   background-color: #e6e6e6; }
-  .event div .thumb img {
+  .event .thumb img {
     width: 100%; }
-  .event div p {
+  .event p {
     margin: 10px; }
-  .event div .mere {
+  .event .mere {
     margin: 10px; }
-  .event div .tekst {
+  .event .tekst {
     display: flex;
     justify-content: space-between;
     margin: 5px; }
-    .event div .tekst .sted {
+    .event .tekst .sted {
       background-color: #185970;
       color: #ffffff;
       padding: 10px;
       margin: 5px;
       width: 50%; }
-    .event div .tekst .buy {
+    .event .tekst .buy {
       display: flex;
       align-items: center;
       background-color: #87aa44;
@@ -148,63 +158,61 @@ footer {
       margin: 5px;
       width: 50%; }
 
-/*Slide-show*/
-* {box-sizing:border-box}
+* {
+  box-sizing: border-box; }
 
 .slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-}
+  max-width: 1000px;
+  position: relative;
+  margin: auto; }
 
-.prev,.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0; }
+
 .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
+  right: 0;
+  border-radius: 3px 0 0 3px; }
+
 .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8)
-}
+  background-color: rgba(0, 0, 0, 0.8); }
+
 .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center; }
+
 .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0; }
+
 .dot {
-    cursor:pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease; }
+
 .active, .dot:hover {
-    background-color: #717171;
-}
+  background-color: #717171; }
 
 /*# sourceMappingURL=styles.css.map */
