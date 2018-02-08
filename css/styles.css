@@ -170,6 +170,10 @@ footer {
   display: flex;
   justify-content: center; }
 
+#search {
+  width: 300px;
+  height: auto; }
+
 * {
   box-sizing: border-box; }
 

@@ -2,15 +2,25 @@ $(document).ready(function () {
     var search = 	[
         {
             "id":"1",
-            "title":"Coffee for the brain"
+            "title":"Blues"
         },
         {
             "id":"2",
-            "title":"Project Art"
+            "title":"Februar"
+        }, {
+            "id":"3",
+            "title":"Festival"
         },
         {
-            "id":"3",
-            "title":"Turn coffee into code"
+            "id":"4",
+            "title":"Folkemusik"
+        } {
+            "id":"5",
+            "title":"Frederikshavn"
+        }
+        {
+            "id":"6",
+            "title":"Fyrværkerifestival 2018"
         }
     ];
 
