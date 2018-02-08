@@ -157,8 +157,9 @@ footer {
 //styling af musik-side her!
 .valg {
   max-width: 30%;
-  min-width: 25%;
-  padding: 5px;
+  min-width: 28%;
+  padding: 10px;
+  margin: 0 10px 5px 10px;
   //margin: 0 10px;
   background-color: $green;
   color: #FFFFFF;
@@ -166,15 +167,16 @@ footer {
 
 .valg3 {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .liste {
-  margin: 10px;
+  margin: 5px;
 }
 
 .event {
   background-color: $grey;
+  margin: 5px;
     .thumb {
       img {
         width: 100%;
@@ -270,3 +272,140 @@ footer {
 }
 
 //slideshow slut
+
+//mediaquery - tablet
+
+@media screen and (min-width: 600px) {
+
+  h2 {
+    max-width: 96%;
+    min-width: 96%;
+    //margin: 0 5px;
+  }
+
+  .valg3 {
+    max-width: 96%;
+    min-width: 96%;
+  }
+
+
+  .liste {
+    display: flex;
+    //justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .event {
+    min-width: 48%;
+    max-width: 48%;
+  }
+
+  @supports (grid-area: auto) {
+
+    #musik{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-areas:
+              "head head"
+              "bread bread"
+              "h2 h2"
+              "valg valg"
+              "liste liste"
+              "foot foot";
+    }
+
+    header {
+      grid-area: head;
+    }
+
+    .breadcrumb {
+      grid-area: bread;
+    }
+
+    h2 {
+      grid-area: h2;
+    }
+
+    .valg3 {
+      grid-area: valg;
+    }
+
+    .liste {
+      grid-area: liste;
+    }
+
+    footer {
+      grid-area: foot;
+    }
+
+  }
+
+}
+
+@media screen and (min-width: 1366px) {
+
+  h2 {
+    max-width: 96.5%;
+    min-width: 96.5%;
+    //margin: 0 5px;
+  }
+
+  .event {
+    min-width: 32%;
+    max-width: 32%;
+    margin: 5px;
+  }
+
+  .valg {
+    min-width: 32.25%;
+    max-width: 32.25%;
+    //margin: 5px;
+  }
+
+  .valg3 {
+    min-width: 96.5%;
+    max-width: 96.5%;
+  }
+
+
+  @supports (grid-area: auto) {
+
+    #musik{
+      display: grid;
+      grid-template-columns: 15% 70% 15%;
+      grid-template-areas:
+              "head head head"
+              "bread bread bread"
+              ". h2 ."
+              ". valg ."
+              ". liste ."
+              "foot foot foot";
+    }
+
+    header {
+      grid-area: head;
+    }
+
+    .breadcrumb {
+      grid-area: bread;
+    }
+
+    h2 {
+      grid-area: h2;
+    }
+
+    .valg3 {
+      grid-area: valg;
+    }
+
+    .liste {
+      grid-area: liste;
+    }
+
+    footer {
+      grid-area: foot;
+    }
+
+  }
+
+}
