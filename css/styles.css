@@ -23,7 +23,7 @@ header {
   border-bottom: solid;
   border-width: 5px;
   border-color: #185970; }
-  header div #logo {
+  header figure #logo {
     width: 30%;
     min-width: 100px;
     max-width: 180px;
