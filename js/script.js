@@ -35,9 +35,6 @@ $(document).ready(function () {
             }
         });
     });
-});
-var slideIndex = 1;
-showSlides(slideIndex);
     /*Er udkommenteret indtil videre
     //slideshow
     var slideIndex = 1;
