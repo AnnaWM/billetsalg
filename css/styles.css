@@ -133,23 +133,23 @@ footer {
 
 .event {
   background-color: #e6e6e6; }
-  .event div .thumb img {
+  .event .thumb img {
     width: 100%; }
-  .event div p {
+  .event p {
     margin: 10px; }
-  .event div .mere {
+  .event .mere {
     margin: 10px; }
-  .event div .tekst {
+  .event .tekst {
     display: flex;
     justify-content: space-between;
     margin: 5px; }
-    .event div .tekst .sted {
+    .event .tekst .sted {
       background-color: #185970;
       color: #ffffff;
       padding: 10px;
       margin: 5px;
       width: 50%; }
-    .event div .tekst .buy {
+    .event .tekst .buy {
       display: flex;
       align-items: center;
       background-color: #87aa44;
