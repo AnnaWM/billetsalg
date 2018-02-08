@@ -162,6 +162,16 @@ footer {
       margin: 5px;
       width: 50%; }
 
+#feltet {
+  margin: 10px 0px; }
+
+.felt {
+  background-color: #185970;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+
 * {
   box-sizing: border-box; }
 

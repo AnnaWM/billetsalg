@@ -1,4 +1,43 @@
 $(document).ready(function () {
+    var search = 	[
+        {
+            "id":"1",
+            "title":"Coffee for the brain"
+        },
+        {
+            "id":"2",
+            "title":"Project Art"
+        },
+        {
+            "id":"3",
+            "title":"Turn coffee into code"
+        }
+    ];
+
+    function emptyResult(){
+        $("#result").html("");
+    }
+
+    $("#search").keyup(function () {
+
+        var searchInput = $("#search").val();
+        emptyResult();
+
+        $(search).each(function (key, value) {
+
+            if(value["title"].includes(searchInput)){
+
+                $("#result").append(value["title"] + "<br>");
+
+                if(searchInput.length == 0){
+                    emptyResult();
+                }
+            }
+        });
+    });
+});
+var slideIndex = 1;
+showSlides(slideIndex);
     /*Er udkommenteret indtil videre
     //slideshow
     var slideIndex = 1;
@@ -57,6 +96,5 @@ $(document).ready(function () {
             });
         }
     }
-
 
 });

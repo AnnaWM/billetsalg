@@ -214,6 +214,18 @@ footer {
 
 }
 
+//søgefunktion
+#feltet {
+  margin: 10px 0px;
+}
+.felt {
+  background-color: $blue;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 //styling af slideshow
 * {box-sizing:border-box}
 
