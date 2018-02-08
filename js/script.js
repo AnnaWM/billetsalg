@@ -31,7 +31,7 @@ $(document).ready(function () {
      */
 
     //filterfunctionen
-    $("#genre").change(function() {
+    $(".valg").change(function() {
         //vælger værdien
         var filter = $(this).val();
         //sender værdien til funktionen "filterList"
