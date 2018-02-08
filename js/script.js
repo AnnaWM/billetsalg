@@ -24,7 +24,8 @@ for (i = 0; i < dots.length; i++) {
      dots[slideIndex-1].className += "active";
     }
 
-
+/*this code has been taken from https://www.w3schools.com/howto/howto_js_slideshow.asp
+ */
 
 
 
