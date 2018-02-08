@@ -20,6 +20,8 @@ body {
 
 h2 {
   margin: 10px;
+  padding: 5px 10px;
+  background-color: $orange;
 }
 
 h3 {
@@ -153,8 +155,18 @@ footer {
 }
 
 //styling af musik-side her!
-#genre {
-  margin: 0 10px;
+.valg {
+  max-width: 30%;
+  min-width: 25%;
+  padding: 5px;
+  //margin: 0 10px;
+  background-color: $green;
+  color: #FFFFFF;
+}
+
+.valg3 {
+  display: flex;
+  justify-content: space-around;
 }
 
 .liste {
