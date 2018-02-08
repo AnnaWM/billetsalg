@@ -1,3 +1,113 @@
+* {
+  margin: 0; }
+
+body {
+  font-family: "Calibri", sans-serif; }
+
+h2 {
+  margin: 10px; }
+
+h3 {
+  background-color: #f79237;
+  padding: 10px; }
+
+a {
+  color: #000000;
+  text-decoration: none; }
+
+.mere {
+  text-decoration: underline; }
+
+header {
+  background-color: #e6e6e6;
+  border-bottom: solid;
+  border-width: 5px;
+  border-color: #185970; }
+  header div #logo {
+    width: 30%;
+    min-width: 100px;
+    max-width: 180px;
+    margin: 10px; }
+
+/* Style the list */
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee; }
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px; }
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0"; }
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none; }
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline; }
+
+footer {
+  background-color: #e6e6e6;
+  border-top: solid;
+  border-width: 5px;
+  border-color: #185970;
+  display: flex;
+  justify-content: space-between; }
+  footer .site_map {
+    margin: 10px; }
+  footer .social {
+    margin: 5px;
+    display: flex;
+    justify-content: flex-end; }
+    footer .social img {
+      max-width: 50px;
+      max-height: 50px;
+      margin: 5px; }
+
+#genre {
+  margin: 0 10px; }
+
+.liste {
+  margin: 10px; }
+
+.event {
+  background-color: #e6e6e6; }
+  .event div .thumb img {
+    width: 100%; }
+  .event div p {
+    margin: 10px; }
+  .event div .mere {
+    margin: 10px; }
+  .event div .tekst {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px; }
+    .event div .tekst .sted {
+      background-color: #185970;
+      color: #ffffff;
+      padding: 10px;
+      margin: 5px;
+      width: 50%; }
+    .event div .tekst .buy {
+      display: flex;
+      align-items: center;
+      background-color: #87aa44;
+      color: #ffffff;
+      padding: 10px;
+      margin: 5px;
+      width: 50%; }
+
+/*Slide-show*/
 * {box-sizing:border-box}
 
 .slideshow-container {
@@ -55,45 +165,5 @@
 .active, .dot:hover {
     background-color: #717171;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*# sourceMappingURL=styles.css.map */
