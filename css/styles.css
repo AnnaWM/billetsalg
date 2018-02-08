@@ -33,16 +33,17 @@ header {
 
 /* Dropdown Button */
 .dropbtn {
-  background-color: #4CAF50;
+  background-color: #87aa44;
   color: white;
-  padding: 16px;
+  padding: 10px;
   font-size: 16px;
-  border: none; }
+  border: none;
+  max-width: 20%; }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
-  display: inline-block; }
+  display: inline; }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
@@ -70,7 +71,7 @@ header {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-  background-color: #3e8e41; }
+  background-color: #87aa44; }
 
 /* Style the list */
 ul.breadcrumb {
@@ -123,7 +124,8 @@ footer {
   padding: 10px;
   margin: 0 10px 5px 10px;
   background-color: #87aa44;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  font-size: 16px; }
 
 .valg3 {
   display: flex;
@@ -266,11 +268,26 @@ footer {
       grid-area: liste; }
 
     footer {
-      grid-area: foot; } } }
+      grid-area: foot; }
+      footer .social img {
+        max-width: 75px;
+        max-height: 75px; } } }
 @media screen and (min-width: 1366px) {
+  nav {
+    margin: 0 15%; }
+
+  header figure {
+    margin: 0 15%; }
+
+  .breadcrumb {
+    margin: 0 16.5% 0 15%; }
+
   h2 {
     max-width: 96.5%;
     min-width: 96.5%; }
+
+  footer {
+    justify-content: space-around; }
 
   .event {
     min-width: 32%;
@@ -284,6 +301,15 @@ footer {
   .valg3 {
     min-width: 96.5%;
     max-width: 96.5%; }
+
+  .dropbtn {
+    font-size: 22px; }
+
+  #logo {
+    width: 30%;
+    min-width: 100px;
+    max-width: 300px;
+    margin: 10px; }
 
   @supports (grid-area: auto) {
     #musik {
