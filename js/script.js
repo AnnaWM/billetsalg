@@ -7,17 +7,19 @@ $(document).ready(function () {
         {
             "id":"2",
             "title":"Februar"
-        }, {
+        },
+        {
             "id":"3",
             "title":"Festival"
         },
         {
             "id":"4",
             "title":"Folkemusik"
-        } {
+        },
+        {
             "id":"5",
             "title":"Frederikshavn"
-        }
+        },
         {
             "id":"6",
             "title":"Fyrværkerifestival 2018"
