@@ -4,8 +4,8 @@
 body {
   font-family: "Calibri", sans-serif; }
 
-h1 {
-  font-size: 15px; }
+h1, b {
+  font-size: 13px; }
 
 h2 {
   margin: 10px;
@@ -79,7 +79,8 @@ header {
 ul.breadcrumb {
   padding: 10px 16px;
   list-style: none;
-  background-color: #e6e6e6; }
+  background-color: #e6e6e6;
+  width: 100%; }
 
 /* Display list items side by side */
 ul.breadcrumb li {
@@ -239,6 +240,17 @@ footer {
   background-color: #717171; }
 
 @media screen and (min-width: 600px) {
+  header figure #logo {
+    width: 50%;
+    min-width: 250px;
+    max-width: 300px; }
+
+  h1, b {
+    font-size: 18px; }
+
+  #search {
+    width: 550px; }
+
   h2 {
     max-width: 96%;
     min-width: 96%; }
@@ -288,15 +300,15 @@ footer {
   header figure {
     margin: 0 15%; }
 
-  .breadcrumb {
-    margin: 0 16.5% 0 15%; }
-
   h2 {
     max-width: 96.5%;
     min-width: 96.5%; }
 
   footer {
     justify-content: space-around; }
+
+  #search {
+    width: 1000px; }
 
   .event {
     min-width: 32%;
