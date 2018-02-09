@@ -18,6 +18,10 @@ body {
   font-family: "Calibri", sans-serif;
 }
 
+h1{
+  font-size: 15px;
+}
+
 h2 {
   margin: 10px;
   padding: 5px 10px;
@@ -36,7 +40,6 @@ a {
 
 .mere {
   text-decoration: underline;
-
 }
 
 //header & footer!
@@ -47,65 +50,67 @@ header {
   border-color: $blue;
     figure {
       #logo {
-        width: 30%;
+        width: 50%;
         min-width: 100px;
         max-width: 180px;
         margin: 10px;
       }
     }
 }
-/* Dropdown Button */
-.dropbtn {
-  background-color: $green;
-  color: white;
-  padding: 10px;
-  font-size: 16px;
-  border: none;
-  max-width: 20%;
-}
+  /* Dropdown Button */
+  .dropbtn {
+    background-color: $green;
+    color: white;
+    border: none;
+    max-width: 20%;
+    padding: 10px 18px;
+  }
 
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline;
-}
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline;
+  }
 
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
 
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd}
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: $grey
+  }
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color: $green;
-}
-//brødkrummer (skal tilpasses)
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: $green;
+  }
+
+//brødkrummer
 /* Style the list */
 ul.breadcrumb {
   padding: 10px 16px;
   list-style: none;
-  background-color: #eee;
+  background-color: $grey;
 }
 
 /* Display list items side by side */
@@ -117,19 +122,19 @@ ul.breadcrumb li {
 /* Add a slash symbol (/) before/behind each list item */
 ul.breadcrumb li+li:before {
   padding: 8px;
-  color: black;
+  color: #000000;
   content: "/\00a0";
 }
 
 /* Add a color to all links inside the list */
 ul.breadcrumb li a {
-  color: #0275d8;
+  color: $blue;
   text-decoration: none;
 }
 
 /* Add a color on mouse-over */
 ul.breadcrumb li a:hover {
-  color: #01447e;
+  color: $blue;
   text-decoration: underline;
 }
 
@@ -211,7 +216,6 @@ footer {
         width: 50%;
       }
     }
-
 }
 
 //søgefunktion
@@ -228,6 +232,9 @@ footer {
 #search {
   width: 300px;
   height: auto;
+}
+#result {
+  background-color: #ffffff;
 }
 
 //styling af slideshow
